@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2? famille=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    margin: 0;
+    padding: 0;
+    border: px solid black;
+}
+  
+html {
+    -webkit-text-size-adjust: 100%;
+}
+  
+body {
+    font-size: 16px;
+    background-color:white;
+}
+
+.header {
+    font-family: 'Shrikhand', cursif;
+    text-align: center;
+    box-shadow: 0px 0px 8px gray;
+    padding: 16px;
+}
+
+
+
