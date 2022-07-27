@@ -19,13 +19,29 @@ html {
 body {
     font-size: 16px;
     background-color:white;
+    font-family: "Roboto", sans-serif;
 }
 
 .header {
-    font-family: 'Shrikhand', cursif;
+    font-family: "Shrikhand", cursif;
     text-align: center;
     box-shadow: 0px 0px 8px gray;
     padding: 16px;
+    position: relative;
+}
+
+.city-localisation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 16px;
+}
+
+.city-localisation i {
+    font-size: 18px;
 }
 
 
