@@ -42,7 +42,6 @@ header img {
   text-align: center;
   padding: 16px;
 }
-
 .city-localisation i {
   font-size: 16px;
 }
@@ -52,16 +51,13 @@ header img {
   text-align: center;
   background-color: #f3f3f3;
 }
-
 .reservation-info h2 {
   padding-top: 32px;
 }
-
 .reservation-info p {
   margin-top: 16px;
   color: rgb(68, 68, 68);
 }
-
 .reservation-info_button {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
@@ -75,7 +71,6 @@ header img {
   cursor: pointer;
   transition: transform 0.2s;
 }
-
 .reservation-info_button:hover {
   transform: scale(1.03);
 }
