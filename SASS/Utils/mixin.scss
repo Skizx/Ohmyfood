@@ -1,0 +1,7 @@
+@mixin box-shadow {
+    box-shadow: 0px 0px 8px gray
+}
+
+@mixin button-hover {
+    transform: scale(1.03);
+}

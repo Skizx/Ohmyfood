@@ -1,0 +1,61 @@
+/* Fonctionnement listes */
+.functioning-block {
+    padding: 0 16px;
+    /* Ajout des valeurs 1,2,3...*/
+    counter-reset: steps;
+
+    &_title {
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    & li {
+        position: relative;
+        background-color: #f3f3f3;
+        padding: 24px 40px;
+        border-radius: 20px;
+        font-weight: 500;
+        @include box-shadow;
+        &::before {
+            /* Valeurs 1,2,3 ... des listes + modification*/
+            content: counter(steps);
+            counter-increment: steps;
+            font-size: 10px;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: -10px;
+        }
+
+        &:hover {
+            @include button-hover;
+        }
+    
+        & i.fas {
+            /*Icones gris*/
+            margin-right: 16px;
+            font-size: 20px;
+            color: gray;
+        }
+
+        & i.fas-purple {
+            /*icone violet*/
+            margin-right: 16px;
+            font-size: 20px;
+            color:$color-primary;
+        }
+      
+        
+    }
+}
