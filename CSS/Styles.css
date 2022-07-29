@@ -23,6 +23,11 @@ ol {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   text-align: center;
   padding: 15px;
@@ -131,6 +136,40 @@ header img {
   margin-right: 16px;
   font-size: 20px;
   color: #9356DC;
+}
+
+.restaurants-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  margin-top: 40px;
+}
+.restaurants-block_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.restaurants-block h2 {
+  padding: 68px 16px 16px 16px;
+}
+.restaurants-block--titlecard {
+  margin: 8px 0 4px 8px;
+  font-size: 18px;
+}
+.restaurants-block--textcard {
+  padding: 0 0 16px 8px;
+}
+.restaurants-block--card {
+  background-color: white;
+  border-radius: 15px 15px;
+  margin: 0 16px;
+  box-shadow: 0 0 16px #F2F2F2;
+}
+.restaurants-block--card img {
+  border-radius: 15px 15px 0 0;
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=Styles.css.map */
