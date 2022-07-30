@@ -160,10 +160,20 @@ header img {
   padding: 0 0 16px 8px;
 }
 .restaurants-block--card {
+  position: relative;
   background-color: white;
   border-radius: 15px 15px;
   margin: 0 16px;
   box-shadow: 0 0 16px #F2F2F2;
+}
+.restaurants-block_new {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
 }
 .restaurants-block--card img {
   border-radius: 15px 15px 0 0;

@@ -18,6 +18,7 @@
         gap: 16px;
     }
 
+    
     & h2 {
         padding: 68px 16px 16px 16px;
     }
@@ -26,19 +27,30 @@
         margin: 8px 0 4px 8px;
         font-size: 18px;
     }
-
-
+    
+    
     &--textcard {
-       padding: 0 0 16px 8px;
+        padding: 0 0 16px 8px;
     }
     
     &--card {
-     background-color: white;
-     border-radius: 15px 15px;
-     margin: 0 16px;
-     box-shadow: 0 0 16px #F2F2F2;
-       }
+        position: relative;
+        background-color: white;
+        border-radius: 15px 15px;
+        margin: 0 16px;
+        box-shadow: 0 0 16px #F2F2F2;
+    }
+    
+    &_new {
+        background-color: $color-third;
+        color: #1b6150;
+        padding: 0.5rem;
+        border-radius: 0.125rem;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
 
+    }
        &--card img {
         border-radius: 15px 15px 0 0;
         height: 175px;
