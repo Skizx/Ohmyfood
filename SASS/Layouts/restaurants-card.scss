@@ -1,0 +1,65 @@
+.restaurants-block {
+    /*Carte des restaurants*/
+    display:flex ;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    
+    & h2 {
+        padding: 68px 16px 16px 16px;
+    }
+    
+    &--titlecard {
+        margin: 8px 0 4px 8px;
+        font-size: 18px;
+    }
+    
+    
+    &--textcard {
+        padding: 0 0 16px 8px;
+    }
+
+    i {
+        /*Icone like*/
+        position: absolute;
+        font-size: 32px;
+        right: 32px;
+        bottom: 22px
+    }
+    
+    &--card {
+        position: relative;
+        background-color: white;
+        border-radius: 15px 15px;
+        margin: 0 16px;
+       @include box-shadow;
+    }
+    
+    &_new {
+        /*Carré Nouveau*/
+        background-color: $color-third;
+        color: #188447;
+        padding: 0.5rem;
+        border-radius: 0.125rem;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
+
+    }
+       &--card img {
+        border-radius: 15px 15px 0 0;
+        height: 175px;
+        width: 100%;
+        object-fit: cover;
+       }
+
+      
+
+}
