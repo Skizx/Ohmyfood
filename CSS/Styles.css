@@ -145,6 +145,7 @@ header img {
   flex-direction: column;
   background-color: #F2F2F2;
   margin-top: 40px;
+  padding-bottom: 68px;
 }
 .restaurants-block_list {
   display: flex;
