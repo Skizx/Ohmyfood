@@ -1,3 +1,4 @@
+
 .restaurants-block {
     /*Carte des restaurants*/
     display:flex ;
@@ -27,13 +28,6 @@
         padding: 0 0 16px 8px;
     }
 
-    i {
-        /*Icone like*/
-        position: absolute;
-        font-size: 32px;
-        right: 32px;
-        bottom: 22px
-    }
     
     &--card {
         position: relative;
@@ -43,6 +37,32 @@
        @include box-shadow;
     }
     
+    i {
+        /*Icone like*/
+        position:absolute;
+        font-size: 32px;
+        right: 32px;
+        bottom: 22px;
+    }
+
+    & .fill {
+        color: black;
+        cursor: pointer;
+      }
+      .fill:hover {
+        animation: fill 0.3s ease-in-out;
+        animation-fill-mode: forwards;
+        transform-origin: left;
+        display: inline-block;
+        opacity: 1;
+        background: linear-gradient(to bottom,$color-primary, $color-secondary);
+        background: -webkit-linear-gradient(to bottom #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      }
+
+
     &_new {
         /*Carré Nouveau*/
         background-color: $color-third;
