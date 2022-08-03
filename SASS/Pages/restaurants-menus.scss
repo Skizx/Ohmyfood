@@ -12,23 +12,14 @@
 }
 
 
-.restaurants-menus-block {
-    display: flex;
-    flex-direction: column;
+.title-menus-block {
     position: relative;
     top: -58px;
     background-color: #F2F2F2;
-    padding-bottom: 68px;
     border-radius: 40px 40px 0 0;
 
-    &_list {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-
     & h2 {
-        padding: 36px 16px 16px 16px;
+        padding: 32px 16px 16px 32px;
         font-family: 'Shrikhand';
         font-size: 26px;
         font-weight: 500;
@@ -58,4 +49,95 @@
         -webkit-text-fill-color: transparent;
         font-weight: bold;
     }
+}
+
+.restaurants-menus {
+    position: relative;
+    top: -58px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
+    background-color: #F2F2F2;
+
+    &_block {
+        display: grid;
+        gap: 16px;
+    }
+    
+    & h3 {
+        border-bottom: 3px solid $color-third;
+        width: 12%;
+        font-weight: 400;
+    }
+
+    & > * {
+    }
+}
+
+.menus {
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    @include box-shadow;
+    
+    & > * {
+        padding: 16px 16px;
+    }
+    
+
+    &_animation {
+        display: grid;
+        place-items: center;
+        background-color: $color-third;
+        cursor: pointer;
+        margin-right: -62px;
+        width: 62px;
+
+        i {
+            display: grid;
+            place-items: center;
+            color: $color-third;
+            background-color: white;
+            font-size: 20px;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+        }
+    }
+
+    &_text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &--p {
+            font-size: 14px;
+            margin-top: 6px;
+        }
+     
+
+        &--cost {
+            display: flex;
+            align-items: end;
+            margin-left: auto;
+            margin-right: 16px;
+        }
+    
+    }
+    &:hover { 
+        .menus_animation {
+        margin-right: 0;
+        transition: margin-right 0.5s;
+    }
+    
+    i {
+        animation: spin 0.5s;
+    }
+}
+}
+
+button {
+    text-align: center;
 }
