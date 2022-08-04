@@ -31,3 +31,23 @@
               transform: scale(1) rotateZ(360deg);
     }
 }  
+/*Key animation loader*/
+@keyframes loader {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(0);
+  }
+}
+
+@keyframes loader-bottle {
+  0% { box-shadow: 0 0  inset }
+  50% , 100% { box-shadow: 0 -98px inset }
+}
+
+
+@keyframes loader-bottle_juice {
+  0% , 50%{ box-shadow: 0 0  inset }
+  100% { box-shadow: 0 -20px inset }
+}
