@@ -42,7 +42,9 @@
 }
 
 @keyframes loader-bottle {
-  0% { box-shadow: 0 0  inset }
+  0% {
+   transform: rotate(720deg);
+   box-shadow: 0 0  inset }
   50% , 100% { box-shadow: 0 -98px inset }
 }
 

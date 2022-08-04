@@ -56,7 +56,7 @@
         display: inline-block;
         opacity: 1;
         background: linear-gradient(to bottom,$color-primary, $color-secondary);
-        background: -webkit-linear-gradient(to bottom #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background: -webkit-linear-gradient(to bottom $color-primary, $color-secondary);
         -webkit-background-clip:text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
@@ -67,11 +67,11 @@
         /*Carré Nouveau*/
         background-color: $color-third;
         color: #188447;
-        padding: 0.5rem;
-        border-radius: 0.125rem;
+        padding: 8px;
+        border-radius: 2px;
         position: absolute;
-        top: 1rem;
-        right: 0.75rem;
+        top: 16px;
+        right: 12px;
 
     }
     &--card img {
