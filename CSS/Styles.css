@@ -320,6 +320,7 @@ header img {
 .title-menus-block {
   position: relative;
   top: -58px;
+  margin-bottom: -58px;
   background-color: #F2F2F2;
   border-radius: 40px 40px 0 0;
 }
@@ -354,8 +355,6 @@ header img {
 }
 
 .restaurants-menus {
-  position: relative;
-  top: -58px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -495,8 +494,28 @@ header img {
   animation: spin 0.5s;
 }
 
-button {
+.menus-info {
   text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 16px;
+}
+.menus-info_button {
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 32px;
+  margin: 16px 0 68px 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0px 0px 8px gray;
+}
+.menus-info_button:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
+  box-shadow: 0px 0px 16px black;
 }
 
 .loader {
