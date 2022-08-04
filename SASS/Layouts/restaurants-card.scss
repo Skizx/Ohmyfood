@@ -34,7 +34,7 @@
         background-color: white;
         border-radius: 15px 15px;
         margin: 0 16px;
-       @include box-shadow;
+        @include box-shadow;
     }
     
     i {
@@ -74,13 +74,14 @@
         right: 0.75rem;
 
     }
-       &--card img {
+    &--card img {
         border-radius: 15px 15px 0 0;
         height: 175px;
         width: 100%;
         object-fit: cover;
-       }
+    }
 
       
-
+    
 }
+

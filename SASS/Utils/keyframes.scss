@@ -51,3 +51,14 @@
   0% , 50%{ box-shadow: 0 0  inset }
   100% { box-shadow: 0 -20px inset }
 }
+/*Key fade div menus*/
+@keyframes fadein {
+  from {
+      transform: translateY(50%);
+      opacity:0;
+  }
+  to {
+      transform: translateY(0);
+      opacity:1;
+  }
+}

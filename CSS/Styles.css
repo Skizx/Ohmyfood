@@ -87,6 +87,17 @@ a {
     box-shadow: 0 -20px inset;
   }
 }
+/*Key fade div menus*/
+@keyframes fadein {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 header {
   text-align: center;
   padding: 15px;
@@ -348,7 +359,7 @@ header img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  padding: 0 16px;
+  padding: 0 16px 16px 16px;
   background-color: #F2F2F2;
 }
 .restaurants-menus_block {
@@ -360,17 +371,89 @@ header img {
   width: 12%;
   font-weight: 400;
 }
+/*************Menus****************/
 .menus {
   display: flex;
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0px 0px 8px gray;
+  /*Animations apparition progressive des menus*/
 }
 .menus > * {
   padding: 16px 16px;
 }
+.menus_vignets1 {
+  animation: fadein 1s both;
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
+}
+.menus_vignets2 {
+  animation: fadein 2s both;
+  animation-delay: 200ms;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+.menus_vignets3 {
+  animation: fadein 3s both;
+  animation-delay: 300ms;
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
+}
+.menus_vignets4 {
+  animation: fadein 4s both;
+  animation-delay: 400ms;
+  -moz-animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  -o-animation: fadein 4s;
+}
+.menus_vignets5 {
+  animation: fadein 5s both;
+  animation-delay: 500ms;
+  -moz-animation: fadein 5s;
+  -webkit-animation: fadein 5s;
+  -o-animation: fadein 5s;
+}
+.menus_vignets6 {
+  animation: fadein 6s both;
+  animation-delay: 600ms;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+.menus_vignets7 {
+  animation: fadein 7s both;
+  animation-delay: 700ms;
+  -moz-animation: fadein 7s;
+  -webkit-animation: fadein 7s;
+  -o-animation: fadein 7s;
+}
+.menus_vignets8 {
+  animation: fadein 8s both;
+  animation-delay: 800ms;
+  -moz-animation: fadein 8s;
+  -webkit-animation: fadein 8s;
+  -o-animation: fadein 8s;
+}
+.menus_vignets9 {
+  animation: fadein 9s both;
+  animation-delay: 900ms;
+  -moz-animation: fadein 9s;
+  -webkit-animation: fadein 9s;
+  -o-animation: fadein 9s;
+}
+.menus_vignets10 {
+  animation: fadein 10s both;
+  animation-delay: 1000ms;
+  -moz-animation: fadein 10s;
+  -webkit-animation: fadein 10s;
+  -o-animation: fadein 10s;
+}
 .menus_animation {
+  /*Animation validation menus*/
   display: grid;
   place-items: center;
   background-color: #99E2D0;
