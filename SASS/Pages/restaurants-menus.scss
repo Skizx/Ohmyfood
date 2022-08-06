@@ -193,6 +193,15 @@
         &--p {
             font-size: 14px;
             margin-top: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        & h4 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
      
 

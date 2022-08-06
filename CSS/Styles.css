@@ -481,6 +481,14 @@ header img {
 .menus_text--p {
   font-size: 14px;
   margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menus_text h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menus_text--cost {
   display: flex;
