@@ -7,15 +7,26 @@
     margin-top: 40px;
     padding-bottom: 68px;
 
+
     &_list {
         display: flex;
         flex-direction: column;
         gap: 16px;
+
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     
     & h2 {
         padding: 68px 16px 16px 16px;
+
+        @media screen and (min-width: 992px){
+            padding-bottom: 32px;
+        }
     }
     
     &--titlecard {
@@ -79,6 +90,12 @@
         height: 175px;
         width: 100%;
         object-fit: cover;
+
+        @media screen and (min-width: 992px) {
+            height: 200px;
+            width: 400px;  
+        }
+
     }
 
       

@@ -3,12 +3,20 @@
     left: 30px;
     top: 18px;
     font-size: 22px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .img-menus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+        max-height: 350px;
+    }
 }
 
 
@@ -18,6 +26,10 @@
     margin-bottom: -58px;
     background-color: #F2F2F2;
     border-radius: 40px 40px 0 0;
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
 
     & h2 {
         padding: 32px 16px 16px 32px;
@@ -58,6 +70,10 @@
     gap: 16px;
     padding: 0 16px 16px 16px;
     background-color: #F2F2F2;
+
+    @media screen and (min-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     &_block {
         display: grid;
@@ -172,6 +188,11 @@
         margin-right: -62px;
         width: 62px;
 
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            margin-right: -100px;
+            width: 100px;
+        }
+
         i {
             display: grid;
             place-items: center;
@@ -190,12 +211,20 @@
         overflow: hidden;
         text-overflow: ellipsis;
 
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            font-size: 20px;
+        }
+
         &--p {
             font-size: 14px;
             margin-top: 6px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 20px;
+            }
         }
 
         & h4 {

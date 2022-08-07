@@ -13,6 +13,12 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+            gap: 32px;
+            justify-content: center;
+        }
     }
     & li {
         position: relative;
@@ -21,6 +27,15 @@
         border-radius: 20px;
         font-weight: 500;
         @include box-shadow;
+        
+        @media screen and (min-width: 992px) {
+            width: 30%;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            text-align: center;
+        }
+
         &::before {
             /* Valeurs 1,2,3 ... des listes + modification*/
             content: counter(steps);

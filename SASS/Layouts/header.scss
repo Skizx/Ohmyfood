@@ -3,6 +3,10 @@ header {
     padding: 15px;
     position: relative;
     @include box-shadow;
+
+    @media screen and (min-width: 768px) and (max-width: 1680px) {
+        padding: 30px;
+    }
 }
  header img {
     width: 150px;
