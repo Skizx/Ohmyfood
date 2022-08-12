@@ -71,21 +71,21 @@ a {
     transform: scale(0);
   }
 }
-@keyframes loader-bottle {
+@keyframes loader-cookie {
   0% {
-    transform: rotate(720deg);
-    box-shadow: 0 0 inset;
+    transform: rotate(90deg);
   }
-  50%, 100% {
-    box-shadow: 0 -98px inset;
+  25% {
+    transform: rotate(180deg);
   }
-}
-@keyframes loader-bottle_juice {
-  0%, 50% {
-    box-shadow: 0 0 inset;
+  50% {
+    transform: rotate(260deg);
+  }
+  75% {
+    transform: rotate(320deg);
   }
   100% {
-    box-shadow: 0 -20px inset;
+    transform: rotate(720deg);
   }
 }
 /*Key fade div menus*/
@@ -231,6 +231,9 @@ header img {
   margin-right: 16px;
   font-size: 20px;
   color: #9356DC;
+}
+.functioning-block .lipurple {
+  background-color: #f3e4ff;
 }
 
 .restaurants-block {
@@ -610,41 +613,18 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFF;
-  color: #FF79DA;
   height: 100%;
   inset: 0;
   z-index: 1;
   opacity: 0.8;
-  animation: loader 0.2s linear 3s alternate forwards;
-  /*loader bottle liquid*/
+  animation: loader 0s linear 3s alternate forwards;
+  background: linear-gradient(to bottom, #9356DC, #99E2D0, #FF79DA);
+  color: #9356DC;
 }
-.loader-bottle {
-  /*loader bottle*/
-  width: 40px;
-  height: 98px;
-  display: inline-block;
-  position: relative;
-  border: 2px solid #FFF;
-  box-sizing: border-box;
-  color: #FF79DA;
-  border-radius: 20px 20px 4px 4px;
-  background: #fff;
-  animation: loader-bottle 3s linear infinite alternate;
-}
-.loader-bottle::after {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 0%;
-  transform: translate(-50%, -95%);
-  border: 2px solid #FFF;
-  border-bottom: none;
-  background: #fff;
-  width: 15px;
-  height: 35px;
-  animation: loader-bottle_juice 3s linear infinite alternate;
+.loader-cookie {
+  display: flex;
+  font-size: 100px;
+  animation: loader-cookie 3s infinite forwards;
 }
 
 /*# sourceMappingURL=Styles.css.map */

@@ -3,17 +3,19 @@
     padding: 0 16px;
     /* Ajout des valeurs 1,2,3...*/
     counter-reset: steps;
-
+    
     &_title {
         margin-top: 40px;
         margin-bottom: 32px;
     }
 
+    
+    
     & ol {
         display: flex;
         flex-direction: column;
         gap: 16px;
-
+        
         @media screen and (min-width: 992px) {
             flex-direction: row;
             gap: 32px;
@@ -28,14 +30,15 @@
         font-weight: 500;
         @include box-shadow;
         
+        
         @media screen and (min-width: 992px) {
             width: 30%;
         }
-
+        
         @media screen and (min-width: 768px) and (max-width: 991px) {
             text-align: center;
         }
-
+        
         &::before {
             /* Valeurs 1,2,3 ... des listes + modification*/
             content: counter(steps);
@@ -52,25 +55,28 @@
             position: absolute;
             left: -10px;
         }
-
+        
         &:hover {
             @include button-hover;
         }
-    
+        
         & i.fas {
             /*Icones gris*/
             margin-right: 16px;
             font-size: 20px;
             color: gray;
         }
-
+        
         & i.fas-purple {
             /*icone violet*/
             margin-right: 16px;
             font-size: 20px;
             color:$color-primary;
         }
-      
         
+        
+    }
+    .lipurple {
+        background-color: #f3e4ff;
     }
 }

@@ -41,17 +41,22 @@
   }
 }
 
-@keyframes loader-bottle {
+@keyframes loader-cookie {
   0% {
-   transform: rotate(720deg);
-   box-shadow: 0 0  inset }
-  50% , 100% { box-shadow: 0 -98px inset }
-}
-
-
-@keyframes loader-bottle_juice {
-  0% , 50%{ box-shadow: 0 0  inset }
-  100% { box-shadow: 0 -20px inset }
+      transform: rotate(90deg);
+  }
+  25% {
+      transform: rotate(180deg);
+  }
+  50% {
+      transform: rotate(260deg);
+  }
+  75% {
+      transform: rotate(320deg);
+  }
+  100% {
+      transform: rotate(720deg);
+  }
 }
 /*Key fade div menus*/
 @keyframes fadein {
