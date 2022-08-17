@@ -526,6 +526,7 @@ header img {
   cursor: pointer;
   margin-right: -62px;
   width: 62px;
+  transition: all 0.5s;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .menus_animation {
@@ -579,7 +580,7 @@ header img {
 }
 .menus:hover .menus_animation {
   margin-right: 0;
-  transition: margin-right 0.5s;
+  transition: all 0.5s;
 }
 .menus:hover i {
   animation: spin 0.5s;

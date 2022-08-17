@@ -189,6 +189,7 @@
         cursor: pointer;
         margin-right: -62px;
         width: 62px;
+        transition: all 0.5s;
 
         @media screen and (min-width: 768px) and (max-width: 991px) {
             margin-right: -100px;
@@ -247,7 +248,7 @@
     &:hover { 
         .menus_animation {
         margin-right: 0;
-        transition: margin-right 0.5s;
+        transition: all 0.5s;  
     }
     
     i {
